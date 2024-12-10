@@ -1,0 +1,14 @@
+<Configuration>
+    <MappedFolders>
+        <MappedFolder>
+            <HostFolder>C:\scripts</HostFolder>
+            <SandboxFolder>C:\scripts</SandboxFolder>
+            <ReadOnly>false</ReadOnly>
+        </MappedFolder>
+    </MappedFolders>
+    <ClipboardRedirection>true</ClipboardRedirection>
+    <MemoryInMB>8192</MemoryInMB>
+    <LogonCommand>
+     <Command>C:\scripts\sandbox-setup.cmd</Command>
+    </LogonCommand>
+</Configuration>
