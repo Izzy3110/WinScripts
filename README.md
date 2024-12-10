@@ -27,3 +27,29 @@ echo Sandbox process complete.
 pause
 
 ```
+
+### Contents
+### Config-File
+##### config.wsb
+```
+<Configuration>
+    <MappedFolders>
+        <MappedFolder>
+        <!-- Create a drive mapping that mirrors my Scripts folder -->
+            <HostFolder>C:\scripts</HostFolder>
+            <SandboxFolder>C:\scripts</SandboxFolder>
+            <ReadOnly>false</ReadOnly>
+        </MappedFolder>
+         <MappedFolder>
+            <HostFolder>C:\Pluralsight</HostFolder>
+            <SandboxFolder>C:\Pluralsight</SandboxFolder>
+            <ReadOnly>true</ReadOnly>
+        </MappedFolder>
+    </MappedFolders>
+    <ClipboardRedirection>true</ClipboardRedirection>
+    <MemoryInMB>8192</MemoryInMB>
+    <LogonCommand>
+     <Command>C:\scripts\sandbox-setup.cmd</Command>
+    </LogonCommand>
+</Configuration>
+```
